@@ -1,7 +1,12 @@
 aid: gnc-holdings
-url: https://raw.githubusercontent.com/api-evangelist/gnc-holdings/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/gnc-holdings/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.gnc-holdings.com
+description: >-
+  GNC Holdings is a global specialty retailer of health, wellness, and performance
+  products including vitamins, minerals, herbal supplement products, sports nutrition
+  products, and diet products.
