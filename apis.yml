@@ -42,9 +42,9 @@ common:
     url: https://www.gnc.com/affiliate-program/
   - type: Franchise
     url: https://www.gnc.com/franchise/
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.gnc.com/privacy-policy.html
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.gnc.com/terms-and-conditions.html
   - type: Press Releases
     url: https://www.gnc-holdings.com/news/
