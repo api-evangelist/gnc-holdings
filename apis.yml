@@ -35,7 +35,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gnc-holdin
 access: 3rd-Party
 created: '2026-03-24'
 modified: '2026-04-28'
-position: Consumer
+position: Consuming
 tags:
   - Diet
   - Health
