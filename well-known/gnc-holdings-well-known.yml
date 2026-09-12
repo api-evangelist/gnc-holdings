@@ -1,0 +1,238 @@
+generated: '2026-09-12'
+method: probed
+source: live HTTPS probes of the named /.well-known/ + APIs.json path list on every host in apis.yml
+note: >-
+  GNC Holdings serves NO /.well-known/ discovery document, no APIs.json index, no agent card
+  and no AI plugin manifest on any host it operates. Every named path was probed on all four
+  known hosts: www.gnc.com and stores.gnc.com and gncfranchising.com returned 404 on every
+  path, and the non-public development.gnc.com returned 401 (HTTP basic auth) on every path
+  it served, with /apis.json and /apis.yml answering a PerimeterX 307 bot challenge there. A
+  negative-control path that cannot exist returned 404 (or 401) on each host, so none of these
+  hosts is a path-echoing or soft-200 catch-all. This file records a verified ABSENCE: no
+  WellKnown, SecurityTxt, APICatalog or AgentCard pointer is emitted from it.
+hit_count: 0
+path_echo_control: passed
+hosts:
+- host: https://www.gnc.com
+  note: >-
+    Primary storefront (Salesforce Commerce Cloud). Fronted by PerimeterX; a browser User-Agent
+    plus normal Accept headers gets through, and the 404 body is GNC's own branded 404 page
+    (~223 KB), not a catch-all. /apis.json and /apis.yml returned a clean 404 on an earlier pass
+    in this same session and a PerimeterX 307 challenge on the re-probe — recorded as the 404
+    that was actually observed, with the challenge noted.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/gnc-holdings-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    negative_control: true
+    result: pass   # a path that cannot exist also 404s/401s — host is not a catch-all
+- host: https://stores.gnc.com
+  note: >-
+    GNC store locator, operated on Yext. Every path returns the same 2,948-byte Yext 404 shell.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/gnc-holdings-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    negative_control: true
+    result: pass   # a path that cannot exist also 404s/401s — host is not a catch-all
+- host: https://gncfranchising.com
+  note: >-
+    GNC franchise development site, linked from the gnc.com footer. Distinct per-path 404
+    bodies, so not a catch-all.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/gnc-holdings-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    negative_control: true
+    result: pass   # a path that cannot exist also 404s/401s — host is not a catch-all
+- host: https://development.gnc.com
+  note: >-
+    Non-production GNC host surfaced by search. Every path answers HTTP 401 (HTTP basic auth) —
+    gated, not absent. Recorded for completeness; not a public surface and no pointer is claimed
+    from it.
+  documents:
+  - path: /.well-known/security.txt
+    status: 401
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 401
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 401
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 401
+    file: null
+  - path: /.well-known/api-catalog
+    status: 401
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 401
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 401
+    file: null
+  - path: /.well-known/ucp.json
+    status: 401
+    file: null
+  - path: /.well-known/acp.json
+    status: 401
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 401
+    file: null
+  - path: /.well-known/apis.json
+    status: 401
+    file: null
+  - path: /apis.json
+    status: 307
+    file: null
+  - path: /apis.yml
+    status: 307
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 401
+    file: null
+  - path: /.well-known/agent.json
+    status: 401
+    file: null
+  - path: /.well-known/gnc-holdings-negative-control-7f3ab91c.json
+    status: 401
+    file: null
+    negative_control: true
+    result: pass   # a path that cannot exist also 404s/401s — host is not a catch-all

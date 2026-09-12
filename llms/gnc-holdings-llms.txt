@@ -1,0 +1,42 @@
+# GNC Holdings
+
+> GNC Holdings, LLC (General Nutrition Centers) is an American specialty retailer of health,
+> wellness and performance products — vitamins, minerals, herbal supplements, sports nutrition,
+> diet and energy products. Founded in 1935, headquartered in Pittsburgh, Pennsylvania, and a
+> wholly owned subsidiary of Harbin Pharmaceutical Group since its 2020 acquisition. GNC operates
+> company-owned and franchised retail locations, online stores and retail partnerships across
+> roughly 50 countries.
+
+IMPORTANT — no public API. As of 2026-09-12, GNC Holdings publishes **no public developer program,
+no API documentation, no machine-readable contract (OpenAPI / AsyncAPI / GraphQL / gRPC / WSDL),
+no MCP server and no A2A agent card**. `api.gnc.com` and `developer.gnc.com` do not resolve; the
+full `/.well-known/` discovery surface, `/apis.json`, `/openapi.json` and `/llms.txt` return 404 on
+every host GNC operates. Its storefront runs on Salesforce Commerce Cloud (Demandware) and its
+store locator on Yext, but neither vendor contract is published by GNC for third-party use.
+
+This file is written and maintained by API Evangelist (https://apievangelist.com) as a third-party
+profile. It is NOT published by GNC Holdings and does not represent the company.
+
+## Company
+
+- [GNC storefront](https://www.gnc.com/): Product catalog, online ordering and account management.
+- [About GNC](https://www.gnc.com/about-gnc/about-us.html): Company background and history.
+- [GNC Newsroom](https://www.gnc.com/learn/newsroom): Company announcements and press releases.
+- [GNC Learn](https://www.gnc.com/learn): Editorial hub on nutrition, fitness and supplements.
+- [Store locator](https://stores.gnc.com/): Retail locations, hours and in-store inventory lookup.
+- [LinkedIn](https://www.linkedin.com/company/gnc): Company profile.
+
+## Customer and partner surfaces (human, not machine-readable)
+
+- [Help Center](https://www.gnc.com/help-center.html): Customer support hub.
+- [Contact us](https://www.gnc.com/help/contact-us.html): Support contact routes.
+- [Terms & Conditions](https://www.gnc.com/help/safety-security-privacy.html): Site terms, safety and security notice.
+- [Privacy policy](https://www.gnc.com/privacy-statement/privacy-policy.html): Privacy statement.
+- [Affiliate program](https://www.gnc.com/affiliate.html): Affiliate partnerships, operated through Rakuten Advertising.
+- [Franchising](https://gncfranchising.com/): Franchise development and applications.
+- [Careers](https://myjobs.adp.com/gnc/cx): Job listings, hosted on ADP.
+
+## Optional
+
+- [API Evangelist profile](https://apis.io/provider/gnc-holdings/): Independent third-party profile and rating.
+- [Repository](https://github.com/api-evangelist/gnc-holdings): The artifacts behind this profile.

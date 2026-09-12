@@ -34,7 +34,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gnc-holdings.png
 access: 3rd-Party
 created: '2026-03-24'
-modified: '2026-04-28'
+modified: '2026-09-12'
 position: Consuming
 tags:
   - Diet
@@ -53,28 +53,59 @@ apis: []
 common:
   - type: DomainSecurity
     url: security/gnc-holdings-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/gnc
+  - type: LLMsTxt
+    url: llms/gnc-holdings-llms.txt
   - type: Website
     url: https://www.gnc.com/
-  - type: Holdings
-    url: https://www.gnc-holdings.com/
-  - type: Customers
-    url: https://www.gnc.com/customer-service.html
+  - type: About
+    url: https://www.gnc.com/about-gnc/about-us.html
+  - type: Support
+    url: https://www.gnc.com/help-center.html
+  - type: Blog
+    url: https://www.gnc.com/learn
+  - type: Press Releases
+    url: https://www.gnc.com/learn/newsroom
   - type: Stores
-    url: https://www.gnc.com/stores/
+    url: https://stores.gnc.com/
   - type: Careers
-    url: https://www.gnc.com/careers.html
+    url: https://myjobs.adp.com/gnc/cx
   - type: Affiliate
-    url: https://www.gnc.com/affiliate-program/
+    url: https://www.gnc.com/affiliate.html
   - type: Franchise
-    url: https://www.gnc.com/franchise/
+    url: https://gncfranchising.com/
   - type: PrivacyPolicy
     url: https://www.gnc.com/privacy-policy.html
   - type: TermsOfService
-    url: https://www.gnc.com/terms-and-conditions.html
-  - type: Press Releases
-    url: https://www.gnc-holdings.com/news/
+    url: https://www.gnc.com/help/safety-security-privacy.html
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/gnc
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+
+x-enrichment:
+  date: '2026-09-12'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    GNC is a physical-goods supplement retailer with no developer surface of any kind — api.gnc.com
+    and developer.gnc.com do not resolve, none of the 3,819 URLs in its own sitemap is a developer
+    or API page, and every /.well-known/ path plus /apis.json, /openapi.json and /llms.txt returns
+    404 on www.gnc.com, stores.gnc.com and gncfranchising.com; its storefront runs on Salesforce
+    Commerce Cloud and its store locator on Yext, but neither vendor contract is published by GNC.
+  evidence:
+    - url: https://www.gnc.com/apis.json
+      status: 404
+    - url: https://www.gnc.com/llms.txt
+      status: 404
+    - url: https://www.gnc.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.gnc.com/.well-known/api-catalog
+      status: 404
+    - url: https://stores.gnc.com/openapi.json
+      status: 404
+  checked: '2026-09-12'
