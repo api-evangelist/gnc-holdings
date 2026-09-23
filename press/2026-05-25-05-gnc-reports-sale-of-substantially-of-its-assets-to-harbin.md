@@ -1,7 +1,9 @@
 ---
 title: GNC reports sale of substantially of its assets to Harbin ...
 url: https://www.torys.com/work/2020/10/gnc-reports-sale-of-substantially-of-its-assets-to-harbin-pharmaceutical
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"GNC Holdings" press release artificial intelligence'
 position: 5
 source: serpapi-google

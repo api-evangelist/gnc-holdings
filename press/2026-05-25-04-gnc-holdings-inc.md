@@ -1,7 +1,9 @@
 ---
 title: GNC Holdings Inc.
 url: https://www.nytimes.com/topic/company/gnc-holdings-inc
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"GNC Holdings" press release artificial intelligence'
 position: 4
 source: serpapi-google
